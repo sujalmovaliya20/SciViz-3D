@@ -1,0 +1,36 @@
+services:
+  # 1. Main Node.js API + 3D Frontend
+  - type: web
+    name: sciviz-main-api
+    runtime: node
+    plan: free
+    # Build strategy: install all dependencies and build the React client
+    buildCommand: npm install && npm install --prefix server && npm install --prefix client && npm run build --prefix client
+    startCommand: npm start --prefix server
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: FRONTEND_URL
+        fromService:
+          name: sciviz-main-api
+          type: web
+          property: host
+
+  # 2. Python AI Service (Gestures & Simulation Engine)
+  - type: web
+    name: sciviz-python-ai
+    runtime: docker
+    plan: free
+    rootDir: python-backend
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: CORS_ORIGINS
+        fromService:
+          name: sciviz-main-api
+          type: web
+          property: host
