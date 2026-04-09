@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@react-three/drei": "^9.122.0",
-    "@react-three/fiber": "^8.18.0",
+    "@react-three/fiber": "^9.0.0",
     "@react-three/rapier": "^2.2.0",
     "@tensorflow-models/hand-pose-detection": "^2.0.1",
     "@tensorflow/tfjs": "^4.22.0",
@@ -19,16 +19,15 @@
     "canvas-confetti": "^1.9.4",
     "framer-motion": "^10.18.0",
     "lucide-react": "^0.577.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-helmet-async": "^3.0.0",
     "react-hot-toast": "^2.6.0",
     "react-parallax-tilt": "^1.7.320",
     "react-router-dom": "^6.30.3",
     "react-speech-recognition": "^4.0.1",
-    "react-three-fiber": "^6.0.13",
     "recharts": "^3.8.0",
-    "three": "^0.158.0",
+    "three": "^0.160.0",
     "zustand": "^4.5.7"
   },
   "devDependencies": {
