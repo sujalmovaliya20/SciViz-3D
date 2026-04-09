@@ -1,0 +1,1 @@
+import{j as r}from"./index-BsneMz2c.js";import{T as e}from"./Text-ChoxbPh0.js";function o(){return r.jsxs(r.Fragment,{children:[r.jsx("ambientLight",{intensity:1}),r.jsx(e,{color:"#00e5ff",fontSize:.8,anchorX:"center",anchorY:"middle",children:"Nephron Structure — Coming Soon"})]})}export{o as default};

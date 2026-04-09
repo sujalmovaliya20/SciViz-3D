@@ -1,0 +1,1 @@
+import{j as e}from"./index-BsneMz2c.js";import{T as n}from"./Text-ChoxbPh0.js";function r(){return e.jsxs(e.Fragment,{children:[e.jsx("ambientLight",{intensity:1}),e.jsx(n,{color:"#00e5ff",fontSize:.8,anchorX:"center",anchorY:"middle",children:"Ecosystem Energy Flow — Coming Soon"})]})}export{r as default};

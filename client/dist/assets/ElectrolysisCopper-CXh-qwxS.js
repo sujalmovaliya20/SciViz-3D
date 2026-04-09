@@ -1,0 +1,1 @@
+import{j as o}from"./index-BsneMz2c.js";import{T as e}from"./Text-ChoxbPh0.js";function n(){return o.jsxs(o.Fragment,{children:[o.jsx("ambientLight",{intensity:1}),o.jsx(e,{color:"#00e5ff",fontSize:.8,anchorX:"center",anchorY:"middle",children:"Electrolysis of Copper — Coming Soon"})]})}export{n as default};

@@ -1,0 +1,127 @@
+﻿
+> sciviz-3d-client@0.0.0 build
+> vite build
+
+[36mvite v5.4.21 [32mbuilding for production...[36m[39m
+transforming...
+node.exe : node_modules
+/three-mesh-bvh/src/uti
+ls/ExtensionUtilities.j
+s (6:26): 
+"BatchedMesh" is not 
+exported by "node_modul
+es/three/build/three.mo
+dule.js", imported by "
+node_modules/three-mesh
+-bvh/src/utils/Extensio
+nUtilities.js".
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (node_modules/   
+ th...nUtilities.js    
+".:String) [], Rem    
+oteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+[32mΓ£ô[39m 2771 modules transformed.
+[31mx[39m Build 
+failed in 5.72s
+[31merror during 
+build:
+[31msrc/pages/Experime
+ntViewer.jsx (18:7): 
+"default" is not 
+exported by "src/hooks/
+useAuth.js", imported 
+by "src/pages/Experimen
+tViewer.jsx".[31m
+file: [36mD:/3d experi
+ement/client/src/pages/
+ExperimentViewer.jsx:18
+:7[31m
+[33m
+16: } from 
+'lucide-react';
+17: import toast from 
+'react-hot-toast';
+18: import useAuth 
+from 
+'../hooks/useAuth';
+           ^
+19: import api from 
+'../utils/api';
+20: import 
+useExperimentStore 
+from '../hooks/useExper
+imentStore';
+[31m
+    at getRollupError (
+file:///D:/3d%20experie
+ment/client/node_module
+s/rollup/dist/es/shared
+/parseAst.js:402:41)
+    at error (file:///D
+:/3d%20experiement/clie
+nt/node_modules/rollup/
+dist/es/shared/parseAst
+.js:398:42)
+    at Module.error (fi
+le:///D:/3d%20experieme
+nt/client/node_modules/
+rollup/dist/es/shared/n
+ode-entry.js:17040:16)
+    at 
+Module.traceVariable (f
+ile:///D:/3d%20experiem
+ent/client/node_modules
+/rollup/dist/es/shared/
+node-entry.js:17452:29)
+    at ModuleScope.find
+Variable (file:///D:/3d
+%20experiement/client/n
+ode_modules/rollup/dist
+/es/shared/node-entry.j
+s:15070:39)
+    at ReturnValueScope
+.findVariable (file:///
+D:/3d%20experiement/cli
+ent/node_modules/rollup
+/dist/es/shared/node-en
+try.js:5673:38)
+    at FunctionBodyScop
+e.findVariable (file://
+/D:/3d%20experiement/cl
+ient/node_modules/rollu
+p/dist/es/shared/node-e
+ntry.js:5673:38)
+    at Identifier.bind 
+(file:///D:/3d%20experi
+ement/client/node_modul
+es/rollup/dist/es/share
+d/node-entry.js:5447:40
+)
+    at 
+CallExpression.bind (fi
+le:///D:/3d%20experieme
+nt/client/node_modules/
+rollup/dist/es/shared/n
+ode-entry.js:2829:23)
+    at 
+CallExpression.bind (fi
+le:///D:/3d%20experieme
+nt/client/node_modules/
+rollup/dist/es/shared/n
+ode-entry.js:12179:15)
+[39m

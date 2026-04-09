@@ -1,0 +1,1 @@
+import{j as t}from"./index-BsneMz2c.js";import{T as n}from"./Text-ChoxbPh0.js";function o(){return t.jsxs(t.Fragment,{children:[t.jsx("ambientLight",{intensity:1}),t.jsx(n,{color:"#00e5ff",fontSize:.8,anchorX:"center",anchorY:"middle",children:"Neutralisation — Coming Soon"})]})}export{o as default};

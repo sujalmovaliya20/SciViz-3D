@@ -1,0 +1,1 @@
+import{j as o}from"./index-BsneMz2c.js";import{T as n}from"./Text-ChoxbPh0.js";function t(){return o.jsxs(o.Fragment,{children:[o.jsx("ambientLight",{intensity:1}),o.jsx(n,{color:"#00e5ff",fontSize:.8,anchorX:"center",anchorY:"middle",children:"Galvanic Corrosion — Coming Soon"})]})}export{t as default};

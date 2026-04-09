@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+websockets
+# mediapipe  # Not available for Python 3.14 defaults yet
+# opencv-python # Not available for Python 3.14 defaults yet
+# tensorflow # Not available for Python 3.14 defaults yet
+numpy
+scipy
+# pybullet # Not available for Python 3.14 defaults yet
+# SpeechRecognition
+anthropic
+python-dotenv
+Pillow
+# pyaudio # Not available for Python 3.14 defaults yet
+aiofiles
+pydantic

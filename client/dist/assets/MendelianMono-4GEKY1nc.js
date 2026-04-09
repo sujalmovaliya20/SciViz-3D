@@ -1,0 +1,1 @@
+import{j as n}from"./index-BsneMz2c.js";import{T as o}from"./Text-ChoxbPh0.js";function i(){return n.jsxs(n.Fragment,{children:[n.jsx("ambientLight",{intensity:1}),n.jsx(o,{color:"#00e5ff",fontSize:.8,anchorX:"center",anchorY:"middle",children:"Mendelian Monohybrid Cross — Coming Soon"})]})}export{i as default};

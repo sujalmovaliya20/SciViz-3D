@@ -1,0 +1,1 @@
+import{j as n}from"./index-BsneMz2c.js";import{T as t}from"./Text-ChoxbPh0.js";function e(){return n.jsxs(n.Fragment,{children:[n.jsx("ambientLight",{intensity:1}),n.jsx(t,{color:"#00e5ff",fontSize:.8,anchorX:"center",anchorY:"middle",children:"pH Indicators — Coming Soon"})]})}export{e as default};

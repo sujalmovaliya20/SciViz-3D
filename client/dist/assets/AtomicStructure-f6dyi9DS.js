@@ -1,0 +1,1 @@
+import{j as t}from"./index-BsneMz2c.js";import{T as r}from"./Text-ChoxbPh0.js";function n(){return t.jsxs(t.Fragment,{children:[t.jsx("ambientLight",{intensity:1}),t.jsx(r,{color:"#00e5ff",fontSize:.8,anchorX:"center",anchorY:"middle",children:"Atomic Structure — Coming Soon"})]})}export{n as default};

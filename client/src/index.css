@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&family=Syne:wght@700;800&display=swap');
+
+:root {
+  /* Colors */
+  --bg-color: #06080f;
+  --surface-color: #0d1117;
+  --surface-hover: #161b22;
+  --accent-color: #00e5ff;
+  --accent-secondary: #ff4d6d;
+  --text-primary: #ffffff;
+  --text-secondary: #8b949e;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --glass-bg: rgba(13, 17, 23, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.08);
+
+  /* Subject Colors */
+  --physics-color: #00e5ff;
+  --chemistry-color: #bf5af2;
+  --biology-color: #32d74b;
+
+  /* Difficulty Colors */
+  --easy-color: #32d74b;
+  --medium-color: #ff9f0a;
+  --hard-color: #ff453a;
+
+  /* Spacing & Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --container-width: 1400px;
+  --transition-fast: 0.2s ease;
+  --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-display: swap;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: 'Syne', 'Segoe UI', system-ui, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .syne, [style*="Syne"] {
+  font-family: 'Syne', 'Trebuchet MS', 'Arial Black', sans-serif !important;
+  font-weight: 800;
+}
+
+code, pre, .mono, [style*="Space Mono"] {
+  font-family: 'Space Mono', 'Consolas', 'Courier New', monospace !important;
+}
+
+/* Glassmorphism Utility */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
+
+/* Layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: 80px; /* Navbar height */
+  display: flex;
+}
+
+.library-container {
+  flex: 1;
+  padding: 2rem;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--surface-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s var(--transition-smooth) forwards;
+}

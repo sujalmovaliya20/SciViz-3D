@@ -1,0 +1,187 @@
+.console-page {
+  padding: 2rem;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.console-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.console-header h1 {
+  font-size: 2.25rem;
+}
+
+.export-btn {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 0.75rem 1.5rem;
+  border-radius: 100px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  transition: var(--transition-fast);
+}
+
+.export-btn:hover {
+  background: var(--surface-hover);
+  border-color: var(--accent-color);
+}
+
+.console-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.engagement-tiles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.engagement-tile {
+  padding: 1.25rem;
+  border-radius: var(--radius-md);
+}
+
+.tile-label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tile-value {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+  color: var(--accent-color);
+}
+
+.tile-track {
+  height: 4px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.tile-fill {
+  height: 100%;
+  background: var(--accent-color);
+  border-radius: 4px;
+}
+
+/* Table */
+.main-list {
+  padding: 0;
+}
+
+.section-header {
+  padding: 2rem 2rem 1rem 2rem;
+}
+
+.search-mini {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+}
+
+.search-mini input {
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.student-table th {
+  text-align: left;
+  padding: 1rem 2rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.student-table td {
+  padding: 1.25rem 2rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.student-cell {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mini-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--accent-color);
+}
+
+.student-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.student-email {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.score-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.score-badge.high { background: rgba(50, 215, 75, 0.1); color: var(--biology-color); }
+.score-badge.medium { background: rgba(255, 159, 10, 0.1); color: var(--medium-color); }
+
+.action-btn {
+  background: none;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.action-btn:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.console-loading {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+}
