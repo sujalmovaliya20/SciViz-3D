@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\" \"npm run python\"",
+    "dev": "npm start",
     "server": "npm run start --prefix server",
     "client": "npm run dev --prefix client",
     "python": "cd python-backend && .\\venv\\Scripts\\python.exe main.py",

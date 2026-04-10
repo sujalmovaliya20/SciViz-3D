@@ -29,10 +29,10 @@ app.use(express.json());
 // Set security HTTP headers
 app.use(helmet());
 
-// Rate limiting
+// Rate limiting (Relaxed in development, strict in production)
 const limiter = rateLimit({
   windowMs: 10 * 60 * 1000, // 10 mins
-  max: 100, // limit each IP to 100 requests per windowMs
+  max: process.env.NODE_ENV === 'production' ? 100 : 5000, // 5000 requests for dev
   message: 'Too many requests from this IP, please try again after 10 minutes'
 });
 app.use('/api', limiter);
