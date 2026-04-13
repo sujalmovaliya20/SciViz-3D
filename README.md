@@ -1,10 +1,6 @@
 # SciViz 3D | Interactive Science Visualization Platform
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Technology: Three.js](https://img.shields.io/badge/Tech-Three.js-black?logo=three.js)](https://threejs.org/)
-[![Technology: React](https://img.shields.io/badge/Tech-React-61DAFB?logo=react)](https://reactjs.org/)
-[![AI: TensorFlow](https://img.shields.io/badge/AI-TensorFlow-FF6F00?logo=tensorflow)](https://www.tensorflow.org/)
-[![AI: Anthropic](https://img.shields.io/badge/AI-Anthropic-751A3D)](https://www.anthropic.com/)
+
 
 **SciViz 3D** is a high-fidelity, immersive science experiment platform designed for STEM students. It bridges the gap between theoretical concepts and practical understanding through 60+ interactive 3D simulations across Physics, Chemistry, and Biology, enhanced by AI-driven hand gesture control and real-time AI tutoring.
 
@@ -143,5 +139,4 @@ SciViz 3D uses a tri-service architecture:
 
 ---
 
-## 📄 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
