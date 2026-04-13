@@ -1,76 +1,147 @@
-# SciViz 3D
+# SciViz 3D | Interactive Science Visualization Platform
 
-SciViz 3D is a high-fidelity 3D science experiment platform built for students in Classes 10 & 12. It features 20+ interactive simulations across Physics, Chemistry, and Biology, combined with a robust assessment and progress tracking system.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Technology: Three.js](https://img.shields.io/badge/Tech-Three.js-black?logo=three.js)](https://threejs.org/)
+[![Technology: React](https://img.shields.io/badge/Tech-React-61DAFB?logo=react)](https://reactjs.org/)
+[![AI: TensorFlow](https://img.shields.io/badge/AI-TensorFlow-FF6F00?logo=tensorflow)](https://www.tensorflow.org/)
+[![AI: Anthropic](https://img.shields.io/badge/AI-Anthropic-751A3D)](https://www.anthropic.com/)
 
-![SciViz 3D Dashboard](https://via.placeholder.com/800x450?text=SciViz+3D+Dashboard)
+**SciViz 3D** is a high-fidelity, immersive science experiment platform designed for STEM students. It bridges the gap between theoretical concepts and practical understanding through 60+ interactive 3D simulations across Physics, Chemistry, and Biology, enhanced by AI-driven hand gesture control and real-time AI tutoring.
 
-## 🚀 Tech Stack
+---
 
-- **Frontend**: React, Vite, Three.js, React Three Fiber, Framer Motion, Zustand
-- **Backend**: Node.js, Express, MongoDB, JWT, Bcrypt
-- **Styling**: Vanilla CSS (Glassmorphism), Syne & Inter Typography
-- **Deployment**: Vercel (Frontend), Railway (Backend)
+## 🌟 Key Features
 
-## 🧪 Experiment Categories
+### 🎮 Immersive Simulations
+- **60+ Interactive Experiments**: Deep dives into Class 10 & 12 curricula.
+- **Physics Engine**: Real-time collision and physics dynamics powered by `Rapier`.
+- **Photo-realistic Rendering**: High-performance 3D graphics using `React Three Fiber`.
 
-### Physics
-- **Magnetism**: Magnetic Fields, Oersted Experiment
-- **Optics**: Lenses, Mirrors, Prism Dispersion, Reflection
-- **Electricity**: Ohm's Law, Circuit Analysis, Electric Fields
+### 🤖 AI-Powered Interaction
+- **Gesture Control**: Control experiments using real-world hand gestures captured via webcam (TensorFlow.js & Python backend).
+- **AI Tutor**: Integrated AI mentor that provides context-aware hints and explains complex steps in real-time.
+- **Voice Recognition**: Interactive voice commands for navigating and interacting with simulations.
 
-### Chemistry
-- **Physical**: Electrolysis, Crystal Lattices (SC, BCC, FCC, NaCl)
-- **Inorganic**: Daniel Cell, Orbital Hybridisation
+### 🏫 Academic Ecosystem
+- **Student Dashboard**: Track progress, quiz scores, and experiment completion.
+- **Teacher Console**: Manage classes, assign experiments, and monitor student analytics.
+- **Simulated Lab World**: A first-person exploration mode where students can walk through a virtual laboratory.
 
-### Biology
-- **Cytology**: Mitosis, Neuron Impulse
-- **Systems**: DNA Double Helix, Photosynthesis, Heart Circulation
+---
 
-## 🛠️ Local Setup
+## 🧪 Experiment Gallery
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/sciviz-3d.git
-   cd sciviz-3d
-   ```
+<details>
+<summary><b>🔭 Physics (28 Simulations)</b></summary>
 
-2. **Backend Setup**
-   ```bash
-   cd server
-   npm install
-   # Create .env file with MONGODB_URI and JWT_SECRET
-   npm run seed # Populate experiment data
-   npm start
-   ```
+- **Electromagnetism**: AC Generator, Biot-Savart, Faraday Induction, Solenoid, Oersted Experiment.
+- **Optics**: Convex Lens, Concave Mirror, Prism Dispersion, Reflection, Young's Double Slit, Single Slit.
+- **Modern Physics**: Bohr Atom, Photoelectric Effect, Nuclear Fission, Radioactive Decay.
+- **Electronics**: Logic Gates, PN Junction, Capacitor, Ohm's Law.
+- **Fields**: Electric Field (Point/Dipole), Magnetic Field (Bar/Wire), Gauss Law.
+</details>
 
-3. **Frontend Setup**
-   ```bash
-   cd client
-   npm install
-   npm run dev
-   ```
+<details>
+<summary><b>🧬 Biology (15 Simulations)</b></summary>
 
-## 🔐 Environment Variables
+- **Genetics & Molecular**: DNA Double Helix, DNA Replication, Transcription, Translation, Mendelian Genetics.
+- **Cell Biology**: Mitosis, Meiosis.
+- **Human Systems**: Heart Circulation, Digestive System, Nephron, Neuron Impulse, Synapse.
+- **Plant Science**: Photosynthesis.
+- **Ecology**: Ecosystem Energy Flow.
+</details>
 
-| Variable | Description |
-|----------|-------------|
-| `MONGODB_URI` | MongoDB Atlas connection string |
-| `JWT_SECRET` | Secret key for token signing |
-| `PORT` | Backend port (default: 5000) |
-| `FRONTEND_URL` | URL of the frontend for CORS |
+<details>
+<summary><b>⚛️ Chemistry (17 Simulations)</b></summary>
 
-## 🏗️ Deployment
+- **Structure**: Atomic Structure, Crystal Structures (BCC/FCC/SC), NaCl Crystal.
+- **Bonding**: VSEPR Theory, Hybridisation (SP3), Molecular Orbitals, Benzene Resonance.
+- **Electrochemistry**: Daniel Cell, Electrolysis (Water/Copper), Electrolytic Cell, Galvanic Corrosion.
+- **Mechanisms**: Collision Theory, Chirality, Neutralisation, Rusting.
+</details>
 
-- **Frontend**: Connect your GitHub repo to Vercel and set the `root directory` to `client`.
-- **Backend**: Deploy the `server` directory to Railway or Render.
+---
 
-## 🤝 Contribution Guide
+## 🛠️ Technology Stack
 
-To add a new experiment:
-1. Create a new component in `client/src/experiments/[subject]/`.
-2. Register the component in `client/src/experiments/index.js` using `lazy()`.
-3. Add the experiment metadata to the `server/seed.js` script and re-run.
+### Frontend
+- **Framework**: `React` (Vite)
+- **3D Rendering**: `three.js`, `@react-three/fiber`, `@react-three/drei`
+- **Physics**: `@react-three/rapier`
+- **State Management**: `Zustand`
+- **Animations**: `Framer Motion`
+- **AI/CV**: `@tensorflow/tfjs`, `@tensorflow-models/hand-pose-detection`
+
+### Backend (Node.js)
+- **Server**: `Express.js`
+- **Database**: `MongoDB` (Mongoose)
+- **Security**: `JWT`, `bcryptjs`, `helmet`, `express-rate-limit`
+
+### AI Backend (Python)
+- **Framework**: `FastAPI`
+- **AI Tutor**: `Anthropic API` (Claude)
+- **Real-time Sync**: `WebSockets`
+- **Gesture Engine**: Custom Python-based detection
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18+)
+- [Python](https://www.python.org/) (3.9+)
+- [MongoDB](https://www.mongodb.com/) (Local or Atlas)
+- Webcam (for gesture control)
+
+### 1. Clone the Project
+```bash
+git clone https://github.com/your-username/sciviz-3d.git
+cd sciviz-3d
+```
+
+### 2. Backend Setup (Node)
+```bash
+cd server
+npm install
+# Configure .env: MONGODB_URI, JWT_SECRET, PORT, FRONTEND_URL
+npm run seed  # Initialize experiment data
+npm start
+```
+
+### 3. AI Backend Setup (Python)
+```bash
+cd python-backend
+python -m venv venv
+source venv/bin/activate  # venv\Scripts\activate on Windows
+pip install -r requirements.txt
+# Configure .env: ANTHROPIC_API_KEY, CORS_ORIGINS
+python main.py
+```
+
+### 4. Frontend Setup (React)
+```bash
+cd client
+npm install
+npm run dev
+```
+
+---
+
+## 🐳 Docker Setup
+Run the entire ecosystem with a single command:
+```bash
+docker-compose up --build
+```
+
+---
+
+## 🏗️ Architecture
+SciViz 3D uses a tri-service architecture:
+1. **Frontend**: React-based UI + R3F rendering engine.
+2. **Node Server**: Handles User Auth, Analytics, and Metadata.
+3. **Python AI**: Provides real-time physics calculations, AI tutoring, and gesture analysis over WebSockets.
+
+---
 
 ## 📄 License
-MIT License.
-
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
