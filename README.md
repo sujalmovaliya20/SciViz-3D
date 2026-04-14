@@ -81,56 +81,6 @@
 
 ---
 
-## 🚀 Getting Started
-
-### Prerequisites
-- [Node.js](https://nodejs.org/) (v18+)
-- [Python](https://www.python.org/) (3.9+)
-- [MongoDB](https://www.mongodb.com/) (Local or Atlas)
-- Webcam (for gesture control)
-
-### 1. Clone the Project
-```bash
-git clone https://github.com/your-username/sciviz-3d.git
-cd sciviz-3d
-```
-
-### 2. Backend Setup (Node)
-```bash
-cd server
-npm install
-# Configure .env: MONGODB_URI, JWT_SECRET, PORT, FRONTEND_URL
-npm run seed  # Initialize experiment data
-npm start
-```
-
-### 3. AI Backend Setup (Python)
-```bash
-cd python-backend
-python -m venv venv
-source venv/bin/activate  # venv\Scripts\activate on Windows
-pip install -r requirements.txt
-# Configure .env: ANTHROPIC_API_KEY, CORS_ORIGINS
-python main.py
-```
-
-### 4. Frontend Setup (React)
-```bash
-cd client
-npm install
-npm run dev
-```
-
----
-
-## 🐳 Docker Setup
-Run the entire ecosystem with a single command:
-```bash
-docker-compose up --build
-```
-
----
-
 ## 🏗️ Architecture
 SciViz 3D uses a tri-service architecture:
 1. **Frontend**: React-based UI + R3F rendering engine.
